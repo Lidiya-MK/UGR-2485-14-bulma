@@ -1,230 +1,330 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hobbies Page</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Hobbies Page</title>
 </head>
 <body>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
+  <header>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <img src="images/logo.png" class="image is-rounded is-100x100">
+        </div>
+  
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-white" href="home.html">Home</a>
+          <a class="navbar-item has-text-white" href="about-me.html">About me</a>
+          <a class="navbar-item has-text-white" href="hobbies.html">Hobbies</a>
+          <a class="navbar-item has-text-white" href="interests.html">Interests</a>
+          <a class="navbar-item has-text-white" href="inspirations.html">Inspirations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+<main>
+
+
+<section class="section has-background-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter-desktop">
+        <aside class="card mb-5 has-background-grey-light has-text-white">
+          <div class="card-content">
+            <div class="content">
+              <figure class="image is-128x64">
+                <img src="images/hobby.jpg" alt="cup and camera">
+              </figure>
+              <h3 class="title is-4 has-text-white">Quick list</h3>
+              <p><i class="fa-solid fa-book-open"></i> Reading books</p>
+              <p><i class="fa-solid fa-laptop-code"></i> Coding</p>
+              <p><i class="fa-solid fa-video"></i> Video editing</p>
+              <p><i class="fa-solid fa-music"></i> Listening to music</p>
+              <p><i class="fa-solid fa-camera-retro"></i> Photography</p>
             </div>
-        </header>
-        <main>
-           <section>
-            <h1>My Hobbies</h1>
-            <h2>Reading Books</h2>
-            <p>
-                Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.</p>
-                <ul>
-                    <li> Ryan Holiday</li>
-                    <li> Robert Greene</li>
-                    <li> Khalil Gibran</li>
-                </ul>
-            <p>And in the following table you shall find my favorite book in a particular genere of books</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Genre</th>
-                        <th>Book</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Stoicism</td>
-                        <td>The Daily Stoic by Ryan Holiday</td>
-                    </tr>
-                    <tr>
-                        <td>Psychology</td>
-                        <td>The Molecule of More by Daniel Liberman</td>
-                    </tr>
-                    <tr>
-                        <td>Fiction</td>
-                        <td>London Calling by Edward Bloor</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3> My Top 3</h3>
-            <figure>
-                <img src="images/daily.jpg" alt="The cover of the daily stoic">
-                <figcaption>
-                   The Daily Stoic
-            </figcaption>
-        </figure>
-            <figure>
-                <img src="images/childhood.jpg" alt="childhood book cover">
-                <figcaption>
-                   Childhood
-            </figcaption>
-            </figure>
-            <figure>
-                <img src="images/meditations.jpg" alt="meditations book cover">
-                <figcaption>
-                 Meditations
-            </figcaption>
-            </figure>
-            <h2>Coding</h2>
-            <p>I developed an interest for coding this past summer when I followed a tutorial on web development. Coding can be a fun way to spend time and this hobby is special to me because it aids the courses that I am currently taking at AAU. This past summer, I created a quote randomizer. I took the quotes from my favorite authors and put them in a javascript array then wrote the following function to randomize the quotes on a click of a button.</p>
-            <pre>
-                <code>
-                    button.addEventListener('click', function() {
+          </div>
+        </aside>
+        <aside class="hobbies__sidebar2 has-background-grey-light">
+          <div class="card has-background-grey-light">
+            <h3 class="title has-text-centered has-text-white">Travel plans</h3>
+            <div class="columns is-multiline is-mobile ml-3">
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/turkey.jpg" alt="Istanbul" >
+                  </figure>
+                  <figcaption class=" has-text-white">Istanbul</figcaption>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/china.jpg" alt="Istanbul" class="china">
+                  </figure>
+                  <figcaption class=" has-text-white">Great Wall</figcaption>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/japan.jpeg" alt="japan" >
+                  </figure>
+                  <figcaption class=" has-text-white">Tokyo</figcaption>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/russia.jpg" alt="russia" >
+                  </figure>
+                  <figcaption class=" has-text-white">Moscow</figcaption>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/israel.jpg" alt="Isreal" >
+                  </figure>
+                  <figcaption class=" has-text-white">Israel</figcaption>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="travel">
+                  <figure class="image is-64x64">
+                    <img src="images/Greece.jpg" alt="Greece" >
+                  </figure>
+                  <figcaption class="has-text-white">Greece</figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+        
+      </div>
+      <div class="column">
+    
+        <h1 class="title has-text-grey-lighter">My Hobbies</h1>
+       
+          <div class="container">
+            <div class="columns is-desktop">
+              <div class="column">
+                <div >
+                  <h2 class=" has-text-white title ">Reading Books</h2>
+                  <p class="has-text-white">
+                    Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.   Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.
+                  </p>
+                  <ul class=" has-text-white has-text-centered">
+                    <li>	&#9830; Ryan Holiday</li>
+                    <li> 	&#9830; Robert Greene</li>
+                    <li> 	&#9830; Khalil Gibran</li>
+                  </ul>
+                  <p class=" has-text-white">
+                    And in the following table you shall find my favorite book in a particular genere of books
+                  </p>
+                  <table class="hobby-box1__table is-fullwidth has-background-white has-text-dark">
+                    <thead>
+                      <tr>
+                          <th>Genre</th>
+                          <th>Book</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Stoicism</td>
+                          <td>The Daily Stoic by Ryan Holiday</td>
+                      </tr>
+                      <tr>
+                          <td>Psychology</td>
+                          <td>The Molecule of More by Daniel Liberman</td>
+                      </tr>
+                      <tr>
+                          <td>Fiction</td>
+                          <td>London Calling by Edward Bloor</td>
+                      </tr>
+                  </tbody>
+                  </table>
+                  <h3 class=" has-text-white title mt-3" > My Top 3</h3>
+                  <div class="columns is-mobile is-multiline">
+                    <div class="column is-one-third">
+                      <figure>
+                        <img src="images/childhood.jpg" alt="childhood book cover" class="image is-96x96">
+                        <figcaption class="has-text-white">Childhood</figcaption>
+                      </figure>
+                    </div>
+                    <div class="column is-one-third">
+                      <figure>
+                        <img src="images/daily.jpg" alt="The cover of the daily stoic" class="image is-96x96">
+                        <figcaption class="has-text-white">The Daily Stoic</figcaption>
+                      </figure>
+                    </div>
+                    <div class="column is-one-third">
+                      <figure>
+                        <img src="images/meditations.jpg" alt="meditations book cover" class="image is-96x96">
+                        <figcaption class="has-text-white">Meditations</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="hobby-box2">
+                  <h2 class="has-text-white title mt-3">Coding</h2>
+                  <p class="has-text-white">I developed an interest for coding this past summer when I followed a tutorial on web development. Coding can be a fun way to spend time and this hobby is special to me because it aids the courses that I am currently taking at AAU. This past summer, I created a quote randomizer. I took the quotes from my favorite authors and put them in a javascript array then wrote the following function to randomize the quotes on a click of a button.</p>
+                  <div class="is-dark">
+                    <code class="has-text-dark">
+                      button.addEventListener('click', function() {
                         let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
                         quote.innerText = quotes[randomQuoteIndex].quote;
                         person.innerText = quotes[randomQuoteIndex].person;
                         document.body.style.backgroundImage = `url(${quotes[randomQuoteIndex].backgrounds})`;
                       });
-                </code>
-            </pre>
-            <aside>
-               <h3>Hobbies</h3>
-               <img src="images/hobby.jpg" alt="cup and camera">
-               <p>
-                <i class="fa-solid fa-book-open"></i> Reading books
-            </p>
-            <p>
-                <i class="fa-solid fa-laptop-code"></i> Coding
-            </p>
-            <p>
-                <i class="fa-solid fa-video"></i>  Video editing
-            </p>
-            <p>
-                <i class="fa-solid fa-music"></i> Listening to music
-            </p>
-            <p>
-                <i class="fa-solid fa-camera-retro"></i> Photography
-            </p>
-            </aside>
+                    </code>
+                  </div>
+                  
+               </div>
+              </div>
+            </div>
+          </div>             
+</section>
+<section class="video-editing has-background-grey-light">
+  <h2 class="title is-block has-text-centered has-text-white is-1">Video Editing</h2>
+  <div class="columns is-vcentered">
+    <div class="column is-half has-text-dark">
+      <p>
+        I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So I took it upon myself to edit one for the project. And this was the result. I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So I took it upon myself to edit one for the project. And this was the result.
+      </p>
+    </div>
+    <div class="column is-half">
+      <video src="images/JAFAR.mp4" controls loop class="video-editing__video is-8by15"></video>
+    </div>
+  </div>
+  <div class="columns is-vcentered">
+    <div class="column is-half">
+      <video src="images/the-rainy-day.mp4" controls loop class="video-editing__video is-8by15"></video>
+    </div>
+    <div class="column is-half has-text-dark">
+      <p>
+        After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video. After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video.
+      </p>
+    </div>
+  </div>
 
-            <aside>
-                <h3>Travel plans</h3>
-                <figure>
-                    <img src="images/turkey.jpg" alt="istanbul">
-                    <figcaption>
-                        Istanbul
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/china.jpg" alt="The great wall of china">
-                <figcaption>
-                    The great wall
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="images/japan.jpeg" alt="japan">
-            <figcaption>
-                Tokyo
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="images/russia.jpg" alt="russia">
-        <figcaption>
-            Moscow
-    </figcaption>
-</figure>
-<figure>
-    <img src="images/israel.jpg" alt="israel">
-    <figcaption>
-        Isreal
-</figcaption>
-</figure>
-<figure>
-    <img src="images/Greece.jpg" alt="greece">
-    <figcaption>
-        Greece
-</figcaption>
-</figure>
-            </aside>
-           </section>
-        <section>
-            <h2>Video Editing</h2>
-            <p>I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.</p>
-            <video src="images/JAFAR.mp4" controls loop></video>
-            <p>After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video. </p>
-            <video src="images/the-rainy-day.mp4" controls loop ></video>
-        <h2>Did I mention my current favorite song?</h2>
-        <audio controls muted src="images/renzema.mp3" title="All of my worst Ideas by Chris Renzema"></audio>
-        </section>   
-        <section>
-            <h2>Photos I've taken</h2>
-            <figure>
-                <img src="images/photo1.jpg" alt="photo1">
-                <figcaption>
-                    Coba Leaves
-            </figcaption>
-        </figure><figure>
-            <img src="images/photo2.jpg" alt="photo2">
-            <figcaption>
-           My mom's flower
-        </figcaption>
-    </figure><figure>
-        <img src="images/photo3.jpg" alt="photo3">
-        <figcaption>
-         The lonley way home
-    </figcaption>
-</figure>
-<figure>
-    <img src="images/photo4.jpg" alt="photo4">
-    <figcaption>
-      Wooden bird from Gondor
-</figcaption>
-</figure>
-        </section> 
-        </main>
-   
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
-                    </div>
-                </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
-                </div>
-            </div>
-            <div>
-                &copy; 2023 LMK.com. All Rights Reserved.
-            </div>
-        </footer>
- 
+  <div class="columns is-vcentered">
+    <div class="column is-half">
+      <h2 class="title has-text-white">Did I mention my current favorite song?</h2>
+    </div>
+    <div class="column is-half">
+      <audio controls muted src="images/renzema.mp3" title="All of my worst Ideas by Chris Renzema"></audio>
+    </div>
+  </div>
+</section>
+
+  
+<section class="photography has-background-black">
+  <h2 class="title is-2 has-text-white has-text-centered">Photos I have taken</h2>
+  <div class="columns is-multiline is-mobile is-centered">
+    <div class="column is-3-desktop is-6-tablet">
+      <figure class="image is-rounded">
+        <img src="images/photo1.jpg" alt="photo1" class="is-fullwidth">
+        <figcaption class="has-text-white has-text-centered">Coba Leaves</figcaption>
+      </figure>
+    </div>
+    <div class="column is-3-desktop is-6-tablet">
+      <figure class="image is-rounded">
+        <img src="images/photo2.jpg" alt="photo2" class="is-fullwidth">
+        <figcaption class="has-text-white has-text-centered">My mom's flower</figcaption>
+      </figure>
+    </div>
+    <div class="column is-3-desktop is-6-tablet">
+      <figure class="image is-rounded">
+        <img src="images/photo3.jpg" alt="photo3" class="is-fullwidth">
+        <figcaption class="has-text-white has-text-centered">The lonely way home</figcaption>
+      </figure>
+    </div>
+    <div class="column is-3-desktop is-6-tablet">
+      <figure class="image is-rounded">
+        <img src="images/photo4.jpg" alt="photo4" class="is-fullwidth">
+        <figcaption class="has-text-white has-text-centered">Wooden bird from Gondor</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  
+  
+</main>
+
+<footer class="has-background-dark  has-text-white">
+  <div class="columns is-mobile">
+    <div class="column is-4-desktop">
+      <div class="navbar-item" >
+        <img src="images/logo.png" image is-rounded is-100x100 >
+      </div>
+  
+      <div>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:lidiyamkt@gmail.com" class="has-text-white">Email me</a>
+        </p>
+        <p class="footer__linkedin">
+          <i class="fa-brands fa-linkedin"></i> linkedin.com/
+        </p>
+        <p class="footer__telegram">
+          <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+        </p>
+        <p class="footer__phonenumber">
+          <i class="fa-solid fa-phone"></i> +251913460116
+        </p>
+        <p class="footer__github"> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
+      </div>
+    </div>
+    <div class="column is-4-desktop">
+      <ul class="is-hidden-touch">
+      <h2 class="title has-text-white">Site Map</h2>
+     
+        <li><a href="home.html" class="has-text-white">Home</a></li>
+        <li><a href="about-me.html" class="has-text-white">About Me</a></li>
+        <li><a href="hobbies.html" class="has-text-white">Hobbies</a></li>
+        <li><a href="interests.html" class="has-text-white">Interests</a></li>
+        <li><a href="inspirations.html" class="has-text-white">Inspirations</a></li>
+      </ul>
+    </div>
+    <div class="column is-4-desktop">
+      <h2 class="title has-text-white">Message Me</h2>
+      <input type="text" placeholder="Your name" class="input is-block is-expanded mb-3">
+      <input type="email" placeholder="Your email" class="input is-block is-expanded mb-3">
+      <input type="text" placeholder="Your message" class="input is-block is-expanded">
+      
+    </div>
+  </div>
+
+
+      <div class="has-background-black has-text-centered">
+          &copy; 2023 LMK.com. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

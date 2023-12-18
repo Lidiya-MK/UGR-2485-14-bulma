@@ -1,148 +1,194 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About me Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>About me</title>
 </head>
 <body>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
-            </div>
-        </header>
+  <header>
+    <nav class="navbar is-dark " role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <img src="images/logo.png" class="image is-rounded is-100x100">
+        </div>
+  
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-white" href="home.html">Home</a>
+          <a class="navbar-item has-text-white" href="about-me.html">About me</a>
+          <a class="navbar-item has-text-white" href="hobbies.html">Hobbies</a>
+          <a class="navbar-item has-text-white" href="interests.html">Interests</a>
+          <a class="navbar-item has-text-white" href="inspirations.html">Inspirations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
     <main>
-        <section>
-           
-            <figure>
-                <img src="images/me.jpg" alt="me">
-                <figcaption>I wish this was me :)</figcaption>
-            </figure>
-            <h1>Hi I am Lidiya</h1>
-        </section>
+      <section class=" is-medium has-text-centered has-background-grey-light">
+        <div class="columns is-vcentered is-variable is-1-mobile is-8-tablet">
+          <div class="column is-half has-text-centered container">
+            <img src="images/me.jpg" class="is-rounded is-size-128-mobile is-size-96-tablet is-size-96-desktop" style="max-width: 200px;">
+            <h1 class="has-text-dark title is-inline is-size-3-mobile is-size-4-tablet is-size-2-desktop pb-2 " >Hi, I am Lidiya</h1>
+          </div>
+         
+        </div>
+      </section>
+      
+      <article class="has-background-dark">
+        <h2 class="has-text-centered has-text-white title is-size-2">My Story</h2>
+        <div class="columns is-multiline is-variable is-8">
+          <div class="column is-half">
+            <p class="has-text-white pl-4">
+              I was born in Addis Ababa, Ethiopia, on <time datetime="2003-03-16">March 16th, 2003</time>. I'm the youngest among two sisters and a brother. Growing up, I switched between seven different schools. My favorite subjects were Maths, Chemistry, and Biology. When I am not doing school work, I like to read books, take photos, and edit videos.
+            </p>
+          </div>
+          <div class="column is-half">
+            <img src="images/addis.jpg" alt="Addis ababa" class="image ">
+          </div>
+          <div class="column is-half">
+            <img src="images/rice.jpg" alt="rice" class="image">
+          </div>
+          <div class="column is-half">
+            <p class="has-text-right has-text-white pr-4">
+              My favorite dish is rice. When I was 5, my mother used to call me 'Ms. Rice' because of how much I loved having it. I may be doing my country a disservice by saying this since rice isn't particularly a local dish, but I also like many of the local dishes my country has to offer like Tibbs and Dorowot.
+            </p>
+          </div>
+          <div class="column is-half">
+            <p class="has-text-white pl-4">
+              Now, studying software engineering at AAU, I've entered a world where algorithms and code reign supreme. There are countless ways software engineers can help make the world a better place, so I am very lucky to be studying it. I have not yet decided what my specialization is going to be in this field since there are too many choices, but I always do research so I can decide on what is best for me.
+            </p>
+          </div>
+          <div class="column is-half">
+            <img src="images/AAU.png" alt="AAU" class="image">
+          </div>
+        </div>
+      </article>
 
+      <section class="has-background-grey-light">
+        <h2 class="has-text-centered title is-size-1">My Skills</h2>
+        <div class="columns is-multiline is-variable is-6-tablet is-12-mobile ">
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/html.jpg" alt="html logo" class="is-rounded image is-one-quarter-tablet is-half-mobile">
+            <h3 class="has-text-white">HTML and CSS</h3>
+            <p class="has-text-dark">Intermediate Level</p>
+          </div>
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/javascript.png" alt="js logo" class="is-rounded image is-half-tablet is-full-mobile">
+
+            <h3 class="has-text-white">Javascript</h3>
+            <p class="has-text-dark">Intermediate Level</p>
+          </div>
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/java.png" alt="java logo" class="is-rounded image is-one-quarter-tablet is-half-mobile">
+            <h3 class="has-text-white">Java</h3>
+            <p class="has-text-dark">Intermediate Level</p>
+          </div>
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/python.png" alt="python logo" class="is-rounded image is-one-quarter-tablet is-half-mobile">
+            <h3 class="has-text-white">Python</h3>
+            <p class="has-text-dark">Intermediate Level</p>
+          </div>
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/editing.jpg" alt="video editing" class="is-rounded image is-one-quarter-tablet is-half-mobile">
+            <h3 class="has-text-white">Video Editing</h3>
+            <p class="has-text-dark">I edit awesome videos</p>
+          </div>
+          <div class="column is-6-tablet is-12-mobile">
+            <img src="images/photography.jpg" alt="photography" class="is-rounded image is-288x288">
+
+
+            <h3 class="has-text-white">Photography</h3>
+            <p class="has-text-dark">I take cool pictures</p>
+          </div>
+        </div>
+      </section>
+      
+      <section style="background-color: black; color: white;">
+        <h2 class="has-text-centered title has-text-white">My Achievements</h2>
+        <div class="columns is-mobile is-multiline is-centered">
+          <div class="column is-4-widescreen is-4-desktop is-4-tablet is-12-mobile">
+            <img src="images/hsk.jpg" alt="hsk level 2">
+            <h2 class="has-text-centered is-size-5-mobile achievements__name">Hsk Level 2 certificate</h2>
+            <p class="has-text-centered is-size-6-mobile">I have a level 2 proficiency in Mandarin Chinese</p>
+          </div>
+          <div class="column is-4-widescreen is-4-desktop is-4-tablet is-12-mobile">
+            <img src="images/medal.jpg" alt="medal">
+            <h2 class="has-text-centered is-size-5-mobile">Silver Medal for a sophomore Q&A</h2>
+            <p class="has-text-centered is-size-6-mobile">I was awarded a silver medal for a Q&A from 16 contestants</p>
+          </div>
+          <div class="column is-4-widescreen is-4-desktop is-4-tablet is-12-mobile">
+            <img src="images/certificate.jpg" alt="certificate">
+            <h2 class="has-text-centered is-size-5-mobile">Graphics design certificate</h2>
+            <p class="has-text-centered is-size-6-mobile">I have received a certificate from AAU'S solvers club for graphics design</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+<footer class="has-background-dark  has-text-white">
+  <div class="columns is-mobile">
+    <div class="column is-4-desktop">
+      <div class="navbar-item" >
+        <img src="images/logo.png" image is-rounded is-100x100 >
+      </div>
+  
+      <div>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:lidiyamkt@gmail.com" class="has-text-white">Email me</a>
+        </p>
+        <p class="footer__linkedin">
+          <i class="fa-brands fa-linkedin"></i> linkedin.com/
+        </p>
+        <p class="footer__telegram">
+          <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+        </p>
+        <p class="footer__phonenumber">
+          <i class="fa-solid fa-phone"></i> +251913460116
+        </p>
+        <p class="footer__github"> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
+      </div>
+    </div>
+    <div class="column is-4-desktop">
+      <ul class="is-hidden-touch">
+      <h2 class="title has-text-white">Site Map</h2>
      
-    <article> 
-        <h2>My Story</h2>
-    <p>
-        I born in Addis Ababa, Ethiopia,on <time datetime="2003-03-16">March 16th, 2003 </time>, I'm the youngest among two sisters and a brother. growing up, I switched between seven different schools. My favorite subjects where Maths, Chemistry and Biology. When i am not doing school work I like to read books, take photos and I  edit videos. </p>
-        <img src="images/addis.jpg" alt="Addis ababa">
-        <p>
-            My favorite dish is rice. when I was 5 my mother used to call me 'Ms. Rice' because of how much I loved having it. I may be doing my country a disservice by saying this since rice isn't particularly a local dish but I also like many of the local dishes my county has to offer like Tibbs and Dorowot. 
-        </p>
-        <img src="images/rice.jpg" alt="rice">
-        <p>
-            Now, studying software engineering at AAU, I've entered a world where algorithms and code reign supreme. There are countless ways software engineers can help make the world a better place so I am very lucky to be studying it. I have not yet decided what my specialization is going to be in this field since there are too many choices but I always do research so I can decide on what is best for me.
-        </p>
-        <img src="images/AAU.png" alt="AAU">
-    </article>
+        <li><a href="home.html" class="has-text-white">Home</a></li>
+        <li><a href="about-me.html" class="has-text-white">About Me</a></li>
+        <li><a href="hobbies.html" class="has-text-white">Hobbies</a></li>
+        <li><a href="interests.html" class="has-text-white">Interests</a></li>
+        <li><a href="inspirations.html" class="has-text-white">Inspirations</a></li>
+      </ul>
+    </div>
+    <div class="column is-4-desktop">
+      <h2 class="title has-text-white">Message Me</h2>
+      <input type="text" placeholder="Your name" class="input is-block is-expanded mb-3">
+      <input type="email" placeholder="Your email" class="input is-block is-expanded mb-3">
+      <input type="text" placeholder="Your message" class="input is-block is-expanded">
+      
+    </div>
+  </div>
 
-<section>
-    <h2>My Skills</h2>
-    <div>
-        <img src="images/html.jpg" alt="html logo">
-    <h3>HTML and CSS</h3>
-    <p> Intermediate Level</p>
-    </div>
-    <div>
-        <img src="images/javascript.png" alt="js logo">
-    <h3>Javascript</h3>
-    <p>Intermediate level</p>
-    </div>
-    <div>
-        <img src="images/java.png" alt="java logo">
-    <h3> Java</h3>
-    <p>Intermediate Level</p>
-    </div>
-    <div>
-        <img src="images/python.png" alt="python logo">
-    <h3> Python</h3>
-    <p>Intermediate Level</p>
-    </div>
-    <div>
-        <img src="images/editing.jpg" alt="video editing">
-    <h3>Video Editing</h3>
-    <p>I edit awsome videos </p>
-    </div>
-    <div>
-        <img src="images/photography.jpg" alt="photography">
-    <h3>Photography</h3>
-    <p>I take cool pictures</p>
-    </div>
-    
-   
-</section>      
-<h2>My Achievements</h2>
-   <section>
-    <div><img src="images/hsk.jpg" alt="hsk level 2">
-        <h2>Hsk Level 2 certificate</h2>
-        <p>I have a level 2 profeciency in mandarin chinese</p>
-    </div>
-    <div>
-        <img src="images/medal.jpg" alt="medal">
-        <h2>Silver Medal for a sophmore Q&A</h2>
-        <p>I was awarded a silver medal for a Q&A from 16 contestants</p>
-    </div>
-    <div>
-        <img src="images/certificate.jpg" alt="certificate">
-        <h2>Graphics design certificate</h2>
-        <p>I have recived a certificate from AAU'S solvers club for graphics design</p>
-    </div>
- 
-   </section>
-</main>
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
-                    </div>
-                </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
-                </div>
-            </div>
-            <div>
-                &copy; 2023 LMK.com. All Rights Reserved.
-            </div>
-        </footer>
-   
+
+      <div class="has-background-black has-text-centered">
+          &copy; 2023 LMK.com. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
